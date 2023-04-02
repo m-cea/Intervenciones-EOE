@@ -2,7 +2,7 @@
 
 Sistema de registro de las actividades diarias para integrantes de Equipos de Orientación Escolar de escuelas bonaerenses (provincia de Buenos Aires, Argentina 🇦🇷)
 
-💾 Esta pensado para un registro rápido y fiable de las tareas diarias de un integrante de un Eqiupo de Orientación Escolar, conocido anteriormente como gabinete psicopegagógico de la escuela o consejería escolar.
+💾 Está pensado para un registro rápido y fiable de las tareas diarias de un integrante de un Eqiupo de Orientación Escolar, conocido anteriormente como gabinete psicopegagógico de la escuela o consejería escolar.
 Se trata de un grupo profesional (Asistente Social, Psicólogo, Psicopegagogo, Fonoaudiólogo) que trabaja con todos los integrantes de la escuela para fortalecer la trayectoria escolar de las y los estudiantes.
 
 📑 Que acciones se quieren registar?
