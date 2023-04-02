@@ -85,7 +85,7 @@ if  (isset($_GET['ID'])) {
       while($row = mysqli_fetch_array($result_tasks)) { ?>
       <tr>
         <td><?php echo $row['Fecha']; ?></td>
-        <td><?php echo $row['Intervención']; ?></td>
+        <td><?php echo $row['Intervencion']; ?></td>
         <td>
           <a href="editar-intervencion-docente.php?ID=<?php echo $row['Codigo']?>" class="btn btn-secondary">
             <i class="fas fa-marker"></i> Editar

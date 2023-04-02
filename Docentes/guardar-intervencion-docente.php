@@ -6,7 +6,7 @@ if (isset($_POST['guardar_intervencion_docente'])) {
   $docente = $_POST['id'];
   $fecha= $_POST['fecha'];
   $intervencion = $_POST['intervencion'];
-  $query = "INSERT INTO `intervenciones-docentes` (docente, fecha, intervención) VALUES ('$docente', '$fecha', '$intervencion')";
+  $query = "INSERT INTO `intervenciones-docentes` (docente, fecha, intervencion) VALUES ('$docente', '$fecha', '$intervencion')";
   $result = mysqli_query($conn, $query);
   if(!$result) {
     die("Query Failed.");
