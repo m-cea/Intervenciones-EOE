@@ -1,4 +1,4 @@
-<?php include("..\db.php"); 
+<?php include("../db.php"); 
 
 $docente = '';
 $nombre = '';
@@ -16,7 +16,7 @@ if  (isset($_GET['ID'])) {
   }
 }?>
 
-<?php include('..\Includes\header.php'); ?>
+<?php include('../Includes/header.php'); ?>
 
 <!-- Añadir -->
 
@@ -97,8 +97,8 @@ if  (isset($_GET['ID'])) {
           <?php } ?>
         </tbody>
       </table>
-      <a href="..\index.php" class="btn btn-dark">Volver</a>
+      <a href="../index.php" class="btn btn-dark">Volver</a>
     </div>
 </div>
 
-<?php include('..\Includes\footer.php'); ?>
+<?php include('../Includes/footer.php'); ?>

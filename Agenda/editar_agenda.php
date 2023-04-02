@@ -1,5 +1,5 @@
 <?php
-include("..\db.php");
+include("../db.php");
 
 $title = '';
 $start= '';
@@ -24,11 +24,11 @@ if (isset($_POST['update'])) {
   mysqli_query($conn, $query);
   $_SESSION['message'] = 'Tarea actualizada correctamente';
   $_SESSION['message_type'] = 'warning';
-  header('Location: ..\index.php');
+  header('Location: ../index.php');
 }
 
 ?>
-<?php include('..\includes\header.php'); ?>
+<?php include('../includes/header.php'); ?>
 <div class="container p-4">
   <div class="row">
     <div class="col-md-4 mx-auto">
@@ -53,4 +53,4 @@ if (isset($_POST['update'])) {
     </div>
   </div>
 </div>
-<?php include('..\includes\footer.php'); ?>
+<?php include('../includes/footer.php'); ?>

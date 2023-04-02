@@ -1,6 +1,6 @@
 <?php
 
-include('..\db.php');
+include('../db.php');
 
 if (isset($_POST['guardar_intervencion_docente'])) {
   $docente = $_POST['id'];
@@ -14,7 +14,7 @@ if (isset($_POST['guardar_intervencion_docente'])) {
 
   $_SESSION['message'] = 'Intervención guardada correctamente';
   $_SESSION['message_type'] = 'success';
-  header('Location: ..\index.php');
+  header('Location: ../index.php');
 
 }
 

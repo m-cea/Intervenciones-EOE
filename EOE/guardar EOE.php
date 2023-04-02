@@ -1,6 +1,6 @@
 <?php
 
-include('..\db.php');
+include('../db.php');
 
 if (isset($_POST['guardar_eoe'])) {
   $fecha= $_POST['fecha'];
@@ -13,7 +13,7 @@ if (isset($_POST['guardar_eoe'])) {
 
   $_SESSION['message'] = 'Intervención guardada correctamente';
   $_SESSION['message_type'] = 'success';
-  header('Location: ..\index.php');
+  header('Location: ../index.php');
 
 }
 

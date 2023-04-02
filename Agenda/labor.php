@@ -1,8 +1,8 @@
 <?php
 
 //Conexion con la DB y toma de datos del formulario
-require('..\Includes\fpdf\fpdf.php');
-require('..\db.php');
+require('../Includes/fpdf/fpdf.php');
+require('../db.php');
 
 if(isset($_POST['labor_mensual'])){
     $mes = $_POST['mes'];
@@ -14,62 +14,62 @@ if(isset($_POST['labor_mensual'])){
   switch($mes){
     case 1:
     $mes_palabra = "Enero";
-    $logo = "..\Assets\\enero.jpg";
+    $logo = "../Assets/enero.jpg";
     break;
 
     case 2:
     $mes_palabra = "Febrero";
-    $logo = "..\Assets\\febrero.jpg";
+    $logo = "../Assets/febrero.jpg";
     break;
   
     case 3:
     $mes_palabra = "Marzo";
-    $logo = "..\Assets\Marzo.jpg";
+    $logo = "../Assets/Marzo.jpg";
     break;
   
     case 4:
     $mes_palabra = "Abril";
-    $logo = "..\Assets\abril.jpg";
+    $logo = "../Assets/abril.jpg";
     break;
 
     case 5:
     $mes_palabra = "Mayo";
-    $logo = "..\Assets\mayo.jpg";
+    $logo = "../Assets/mayo.jpg";
     break;
 
     case 6:
     $mes_palabra = "Junio";
-    $logo = "..\Assets\junio.jpg";
+    $logo = "../Assets/junio.jpg";
     break;
 
     case 7:
     $mes_palabra = "Julio";
-    $logo = "..\Assets\julio.jpg";
+    $logo = "../Assets/julio.jpg";
     break;
 
     case 8:
     $mes_palabra = "Agosto";
-    $logo = "..\Assets\agosto.jpg";
+    $logo = "../Assets/agosto.jpg";
     break;
 
     case 9:
     $mes_palabra = "Septiembre";
-    $logo = "..\Assets\septiembre.jpg";
+    $logo = "../Assets/septiembre.jpg";
     break;
 
     case 10:
     $mes_palabra = "Octubre";
-    $logo = "..\Assets\octubre.jpg";
+    $logo = "../Assets/octubre.jpg";
     break;
   
     case 11:
     $mes_palabra = "Noviembre";
-    $logo = "..\Assets\Noviembre.jpg";
+    $logo = "../Assets/Noviembre.jpg";
     break;
   
     case 12:
     $mes_palabra = "Diciembre";
-    $logo = "..\Assets\diciembre.jpg";
+    $logo = "../Assets/diciembre.jpg";
     break;
   }
 }

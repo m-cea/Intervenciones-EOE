@@ -1,5 +1,5 @@
 <?php
-include("..\db.php"); ?>
+include("../db.php"); ?>
 
 <?php
 if(isset($_GET['ID'])) {
@@ -16,7 +16,7 @@ if(isset($_GET['ID'])) {
 
   $_SESSION['message'] = 'Docente Eliminado';
   $_SESSION['message_type'] = 'danger';
-  header('Location: ..\index.php');
+  header('Location: ../index.php');
 }
 
 ?>

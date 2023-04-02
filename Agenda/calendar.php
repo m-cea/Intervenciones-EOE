@@ -17,7 +17,7 @@
                 </div>
                 <div class="card-body">
                     <div class="container-fluid">
-                        <form action="Agenda\guardar_agenda.php" method="post">
+                        <form action="Agenda/guardar_agenda.php" method="post">
                             <div class="form-group mb-2">
                                 <label for="title" class="control-label">Tarea</label>
                                 <input type="text" class="form-control form-control-sm rounded-0" name="title" required>
@@ -48,7 +48,7 @@
                 </div>
                 <div class="card-body">
                     <div class="container-fluid">
-                        <form action="Agenda\labor.php" method="post" id="labor" target="_blank">
+                        <form action="Agenda/labor.php" method="post" id="labor" target="_blank">
                             <div class="form-group mb-2">
                             <label for="mes" class="control-label">Elegir el mes</label><br>
                             <select name="mes" class="form-select form-select mb-3" required>
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body rounded-0">
-                <form action="Agenda\editar_agenda.php" method="POST">
+                <form action="Agenda/editar_agenda.php" method="POST">
                     <input type="text" readonly id="id_evento_edit" name="id_evento_edit" hidden>
                     <input type="text" readonly id="desc_evento" name="desc_evento" hidden>
                     <label for="fecha_evento"> Fecha: </label><input type="text" readonly id="fecha_evento" name="fecha_evento" class="border-0"><br>
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="modal-footer rounded-0">
                         <button type="submit" class="btn btn-secondary" id="edit"><i class="fas fa-marker"></i> Editar</button>
                         </form>
-                        <form action="Agenda\eliminar_agenda.php" method="POST">
+                        <form action="Agenda/eliminar_agenda.php" method="POST">
                             <input type="text" readonly id="id_evento_del" name="id_evento_del" hidden>
                             <button type="submit" class="btn btn-danger" id="del"><i class="far fa-trash-alt" onclick='return confirmar()'></i> Eliminar</button>
                         </form>

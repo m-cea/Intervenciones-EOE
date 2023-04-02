@@ -1,6 +1,6 @@
 <?php
 
-include("..\db.php");
+include("../db.php");
 
 if (isset($_POST['agendar'])) {
   $title= $_POST['title'];
@@ -14,6 +14,6 @@ if (isset($_POST['agendar'])) {
 
   $_SESSION['message'] = 'Tarea Agendada';
   $_SESSION['message_type'] = 'success';
-  header('Location: ..\index.php');
+  header('Location: ../index.php');
 
 }

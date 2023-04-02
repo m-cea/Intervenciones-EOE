@@ -1,5 +1,5 @@
 <?php
-        include("..\db.php");
+        include("../db.php");
 
         if(isset($_POST['id_evento_del'])) {
           $id = $_POST['id_evento_del'];
@@ -11,7 +11,7 @@
         
           $_SESSION['message'] = 'Evento Eliminado';
           $_SESSION['message_type'] = 'danger';
-          header('Location: ..\index.php');
+          header('Location: ../index.php');
         }
 
     	?>

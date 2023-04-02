@@ -20,27 +20,19 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `oe`
 --
-
+CREATE DATABASE `oe`;
 -- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `alumnos`
 --
 
-CREATE TABLE `alumnos` (
+CREATE TABLE `Alumnos` (
   `Nombre` varchar(50) NOT NULL,
   `Grado` varchar(2) NOT NULL,
   `Motivo` varchar(100) NOT NULL,
   `ID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Volcado de datos para la tabla `alumnos`
---
-
-INSERT INTO `alumnos` (`Nombre`, `Grado`, `Motivo`, `ID`) VALUES
-('Daniela', '5A', 'Dificultades en el Lenguaje', 3),
-('Camila', '6C', 'No se encuentra alfabetizada', 9);
 
 -- --------------------------------------------------------
 
@@ -48,19 +40,11 @@ INSERT INTO `alumnos` (`Nombre`, `Grado`, `Motivo`, `ID`) VALUES
 -- Estructura de tabla para la tabla `docentes`
 --
 
-CREATE TABLE `docentes` (
+CREATE TABLE `Docentes` (
   `ID` int(11) NOT NULL,
   `Nombre` varchar(50) NOT NULL,
   `Grado` varchar(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Volcado de datos para la tabla `docentes`
---
-
-INSERT INTO `docentes` (`ID`, `Nombre`, `Grado`) VALUES
-(9, 'Lucas', '6A'),
-(13, 'Marisol', '1C');
 
 -- --------------------------------------------------------
 
@@ -78,14 +62,6 @@ CREATE TABLE `intervenciones-agendadas` (
 -- Volcado de datos para la tabla `intervenciones-agendadas`
 --
 
-INSERT INTO `intervenciones-agendadas` (`id`, `title`, `start`) VALUES
-(3, 'Turno medico', '2023-03-09 08:00:00'),
-(4, 'Licencia por examen', '2023-03-10 13:00:00'),
-(5, 'Reunion Red El Martillo', '2023-03-20 10:00:00'),
-(8, 'Reunión ED', '2023-03-13 11:00:00'),
-(10, 'Plenaria', '2023-03-31 09:00:00'),
-(11, 'Licencia', '2023-04-14 13:00:00');
-
 -- --------------------------------------------------------
 
 --
@@ -98,19 +74,6 @@ CREATE TABLE `intervenciones-alumnos` (
   `Intervención` text NOT NULL,
   `Alumno` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Volcado de datos para la tabla `intervenciones-alumnos`
---
-
-INSERT INTO `intervenciones-alumnos` (`Codigo`, `Fecha`, `Intervención`, `Alumno`) VALUES
-(3, '2023-03-22', 'Cuento \"Las medias de los Flamencos\"', 3),
-(5, '2023-03-01', 'Observación Áulica', 3),
-(6, '2023-04-03', 'Acompañamiento en aula', 9),
-(7, '2023-03-15', 'Lectura guiada', 9),
-(8, '2023-03-16', 'Escritura palabras sencillas', 3);
-
--- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `intervenciones-docentes`
@@ -143,31 +106,19 @@ CREATE TABLE `intervenciones-emergentes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `intervenciones-emergentes`
---
-
-INSERT INTO `intervenciones-emergentes` (`ID`, `Fecha`, `Intervencion`) VALUES
-(1, '2023-03-20', 'Reunion Red El Martillo'),
-(3, '2023-03-15', 'Armado de agenda'),
-(4, '2023-03-17', 'Reunión EEE 510'),
-(5, '2023-03-31', 'Plenaria'),
-(8, '2023-03-21', 'Reunion CAPS El Martillo'),
-(9, '2023-02-24', 'Reunión CAPS Santa Rita');
-
---
 -- Índices para tablas volcadas
 --
 
 --
 -- Indices de la tabla `alumnos`
 --
-ALTER TABLE `alumnos`
+ALTER TABLE `Alumnos`
   ADD PRIMARY KEY (`ID`);
 
 --
 -- Indices de la tabla `docentes`
 --
-ALTER TABLE `docentes`
+ALTER TABLE `Docentes`
   ADD PRIMARY KEY (`ID`);
 
 --
@@ -203,13 +154,13 @@ ALTER TABLE `intervenciones-emergentes`
 --
 -- AUTO_INCREMENT de la tabla `alumnos`
 --
-ALTER TABLE `alumnos`
+ALTER TABLE `Alumnos`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `docentes`
 --
-ALTER TABLE `docentes`
+ALTER TABLE `Docentes`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --

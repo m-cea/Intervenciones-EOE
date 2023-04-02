@@ -1,5 +1,5 @@
 <?php
-include("..\db.php");
+include("../db.php");
 $nombre = '';
 $grado= '';
 $motivo= '';
@@ -26,11 +26,11 @@ if (isset($_POST['update'])) {
   mysqli_query($conn, $query);
   $_SESSION['message'] = 'Alumno actualizado correctamente';
   $_SESSION['message_type'] = 'warning';
-  header('Location: ..\index.php');
+  header('Location: ../index.php');
 }
 
 ?>
-<?php include('..\Includes\header.php'); ?>
+<?php include('../Includes/header.php'); ?>
 <div class="container p-4">
   <div class="row">
     <div class="col-md-4 mx-auto">
@@ -49,11 +49,11 @@ if (isset($_POST['update'])) {
         <button class="btn btn-success" name="update">
           Editar
         </button>
-        <a href="..\index.php" class="btn btn-dark">Volver</a>
+        <a href="../index.php" class="btn btn-dark">Volver</a>
       </form>
       
       </div>
     </div>
   </div>
 </div>
-<?php include('..\Includes\footer.php'); ?>
+<?php include('../Includes/footer.php'); ?>
