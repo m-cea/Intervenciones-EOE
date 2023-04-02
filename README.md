@@ -8,7 +8,9 @@ Se trata de un grupo profesional (Asistente Social, Psicólogo, Psicopegagogo, F
 📑 Que acciones se quieren registar?
 
   ➡️Intervenciones con Docentes (orientaciones para trabajar con su grupo o alumno/a en particular, pedido de datos del curso, trabajo conjunto, etc)
+  
   ➡️Intervenciones con Alumnos (observaciones, charlas, trabajo personal o en pequeño grupo, entrevista con padres, etc)
+  
   ➡️Intervenciones como equipo de orientación escolar (asistencia a instituciones, talleres, reuniones o trabajos conjuntos, etc)
   
 👌🏻Además, el sistema permite agendar futuras tareas y emite un reporte en formato PDF sobre todas las tareas realizadas en el mes solicitado.
@@ -16,4 +18,6 @@ Se trata de un grupo profesional (Asistente Social, Psicólogo, Psicopegagogo, F
 ⛔ Límites del sistema
 
   ➡️En este momento se encuentra en etapas de prueba individual, por lo que la DB y la implementación se realiza en localhost con XAMPP/LAMPP.
+  
   ➡️En futuras actualizaciones podría implemetnarse sistema de usuarios y un potencial hosteo en caso de ser necesario.
+
