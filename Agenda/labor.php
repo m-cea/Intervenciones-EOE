@@ -124,13 +124,13 @@ $pdf->Cell(30, 10, utf8_decode('Grado'), 1, 0);
 $pdf->Cell(90, 10, utf8_decode('Intervención'), 1, 0);
 $pdf->Ln(10);
 $pdf->SetFont('Times','',11);
-$query = "SELECT i.Fecha, i.Intervención, a.Nombre, a.Grado FROM `intervenciones-alumnos` AS i INNER JOIN Alumnos AS a WHERE (Fecha >= '$anio-$mes-1') AND (Fecha < '$anio-$sig-1') AND i.alumno = a.ID ORDER BY Fecha DESC";
+$query = "SELECT i.Fecha, i.Intervencion, a.Nombre, a.Grado FROM `intervenciones-alumnos` AS i INNER JOIN Alumnos AS a WHERE (Fecha >= '$anio-$mes-1') AND (Fecha < '$anio-$sig-1') AND i.alumno = a.ID ORDER BY Fecha DESC";
           $result_tasks = mysqli_query($conn, $query);
           while($row = mysqli_fetch_assoc($result_tasks)) {
             $pdf->Cell(30, 10, utf8_decode($row['Fecha']), 1, 0);
             $pdf->Cell(30, 10, utf8_decode($row['Nombre']), 1, 0);
             $pdf->Cell(30, 10, utf8_decode($row['Grado']), 1, 0);            
-            $pdf->MultiCell(90, 10, utf8_decode($row['Intervención']), 1, 0);
+            $pdf->MultiCell(90, 10, utf8_decode($row['Intervencion']), 1, 0);
           }
 
 //Listado de intervenciones con docentes del mes
@@ -145,13 +145,13 @@ $pdf->Cell(30, 10, utf8_decode('Grado'), 1, 0, 'C', 0);
 $pdf->Cell(90, 10, utf8_decode('Intervención'), 1, 0, 'C', 0);
 $pdf->Ln(10);
 $pdf->SetFont('Times','',11);
-$query = "SELECT i.Fecha, i.Intervención, d.Nombre, d.Grado FROM `intervenciones-docentes` AS i INNER JOIN Docentes AS d WHERE (Fecha >= '$anio-$mes-1') AND (Fecha < '$anio-$sig-1') AND i.docente = d.ID ORDER BY Fecha DESC";
+$query = "SELECT i.Fecha, i.Intervencion, d.Nombre, d.Grado FROM `intervenciones-docentes` AS i INNER JOIN Docentes AS d WHERE (Fecha >= '$anio-$mes-1') AND (Fecha < '$anio-$sig-1') AND i.docente = d.ID ORDER BY Fecha DESC";
           $result_tasks = mysqli_query($conn, $query);
           while($row = mysqli_fetch_assoc($result_tasks)) {
             $pdf->Cell(30, 10, utf8_decode($row['Fecha']), 1, 0);
             $pdf->Cell(30, 10, utf8_decode($row['Nombre']), 1, 0);
             $pdf->Cell(30, 10, utf8_decode($row['Grado']), 1, 0);            
-            $pdf->MultiCell(90, 10, utf8_decode($row['Intervención']), 1, 0);
+            $pdf->MultiCell(90, 10, utf8_decode($row['Intervencion']), 1, 0);
           }
 
 //Listado de intervenciones como EOE
