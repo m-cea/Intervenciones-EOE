@@ -42,11 +42,14 @@ if (isset($_POST['update'])) {
       <form action="editar-docente.php?ID=<?php echo $_GET['ID']; ?>" method="POST">
         <p>Modificar datos de Docente</p>
         <div class="form-group">
-          <input name="nombre" type="text" class="form-control" value="<?php echo $nombre; ?>" placeholder="Nuevo Nombre">
+          <label for="nombre">Nuevo Nombre:</label>
+          <input name="nombre" type="text" class="form-control" value="<?php echo $nombre; ?>" required>
         </div>
         <div class="form-group">
-          <input name="grado" type="text" class="form-control" value="<?php echo $grado; ?>" placeholder="Nuevo Grado">
+          <label for="grado">Nuevo Grado:</label>
+          <input name="grado" type="text" class="form-control" value="<?php echo $grado; ?>" required>
         </div>
+        <br>
         <button class="btn btn-success" name="update">
           Editar
         </button>

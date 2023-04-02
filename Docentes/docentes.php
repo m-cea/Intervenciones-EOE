@@ -21,10 +21,10 @@
       </div>
       
       <div class="form-group">
-        <input type="text" name="nombre" class="form-control" placeholder="Nombre" autofocus><p><br></p>
+        <input type="text" name="nombre" class="form-control" placeholder="Nombre" autofocus required><p><br></p>
       </div>
       <div class="form-group">
-        <input type="text" name="grado" class="form-control" placeholder="Grado" autofocus><p><br></p>
+        <input type="text" name="grado" class="form-control" placeholder="Grado" autofocus required><p><br></p>
       </div>
 
       <div class="row justify-content-center">

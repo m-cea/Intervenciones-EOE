@@ -46,10 +46,12 @@ if (isset($_POST['update'])) {
           <input name="id" type="text" class="form-control" value="<?php echo $_POST['id_evento_edit']; ?>" hidden>
         </div>
         <div class="form-group">
-          <input name="title" type="text" class="form-control" value="<?php echo $title; ?>" placeholder="Nueva Tarea">
+        <label for="title">Nueva Tarea:</label>
+          <input name="title" type="text" class="form-control" value="<?php echo $title; ?>" required>
         </div>
         <div class="form-group">
-          <input name="start" type="datetime-local" class="form-control">
+          <label for="start">Nueva Fecha:</label>
+          <input name="start" type="datetime-local" class="form-control" required>
         </div>
         <button class="btn btn-success" name="update">
           Editar

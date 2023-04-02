@@ -43,11 +43,14 @@ if (isset($_POST['update'])) {
       <form action="editar-intervencion-docente.php?ID=<?php echo $_GET['ID']; ?>" method="POST">
         <p>Modificar Intervención</p>
         <div class="form-group">
-          <input name="fecha" type="date" class="form-control" value="<?php echo $fecha; ?>" placeholder="Nueva Fecha">
+          <label for="fecha">Nueva Fecha:</label>
+          <input name="fecha" type="date" class="form-control" value="<?php echo $fecha; ?>" required>
         </div>
         <div class="form-group">
-          <input name="intervencion" type="text" class="form-control" value="<?php echo $intervencion; ?>" placeholder="Nueva Intervención">
+          <label for="intervencion">Nueva Intervención:</label>
+          <input name="intervencion" type="text" class="form-control" value="<?php echo $intervencion; ?>" required>
         </div>
+        <br>
         <button class="btn btn-success" name="update">
           Editar
         </button>

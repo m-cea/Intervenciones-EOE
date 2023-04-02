@@ -1,5 +1,6 @@
 <?php
 include("../db.php");
+
 $fecha = '';
 $intervencion= '';
 
@@ -30,15 +31,10 @@ if (isset($_POST['update'])) {
 
 <?php include('../Includes/header.php'); ?>
 
-<nav class="navbar navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="../index.php">Registro de Actividades EOE</a>
-  </div>
-</nav>
 
 <nav class="navbar navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="/index.php">Registro de Actividades EOE</a>
+    <a class="navbar-brand" href="../index.php">Registro de Actividades EOE</a>
   </div>
 </nav>
 
@@ -49,11 +45,14 @@ if (isset($_POST['update'])) {
       <form action="editar-intervencion-alumno.php?ID=<?php echo $_GET['ID']; ?>" method="POST">
         <p>Modificar Intervención</p>
         <div class="form-group">
-          <input name="fecha" type="date" class="form-control" value="<?php echo $fecha; ?>" placeholder="Nueva Fecha">
+          <label for="intervencion">Nueva Fecha:</label>  
+          <input name="fecha" type="date" class="form-control" value="<?php echo $fecha; ?>" required>
         </div>
         <div class="form-group">
-          <input name="intervencion" type="text" class="form-control" value="<?php echo $intervencion; ?>" placeholder="Nueva Intervención">
+          <label for="intervencion">Nueva Intervención:</label>
+          <input name="intervencion" type="text" class="form-control" value="<?php echo $intervencion; ?>" required>
         </div>
+        <br>
         <button class="btn btn-success" name="update">
           Editar
         </button>

@@ -48,7 +48,7 @@ if  (isset($_GET['ID'])) {
             Grado:<input type="text" name="grado" class="form-control" value = "<?php echo $grado ?>" readonly autofocus> <p><br></p>
           </div>
           <div class="form-group">
-            Fecha: <input type="date" name="fecha" class="form-control" placeholder="Fecha" autofocus><p><br></p>
+            Fecha: <input type="date" name="fecha" class="form-control" placeholder="Fecha" autofocus required><p><br></p>
           </div>
         </div>
 

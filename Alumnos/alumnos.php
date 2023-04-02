@@ -20,13 +20,16 @@
       </div>
 
       <div class="form-group">
-        <input type="text" name="nombre" class="form-control" placeholder="Nombre" autofocus><p><br></p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" class="form-control" placeholder="Nombre" required autofocus><p><br></p>
       </div>
       <div class="form-group">
-        <input type="text" name="grado" class="form-control" placeholder="Grado" autofocus><p><br></p>
+        <label for="grado">Grado:</label>
+        <input type="text" name="grado" class="form-control" placeholder="Grado" required autofocus><p><br></p>
       </div>
       <div class="form-group">
-        <textarea name="motivo" rows="2" class="form-control" placeholder="Motivo de intervención"></textarea><p><br></p>
+        <label for="motivo">Motivo:</label>
+        <textarea name="motivo" rows="2" class="form-control" placeholder="Motivo de intervención" required></textarea><p><br></p>
       </div>
 
 
