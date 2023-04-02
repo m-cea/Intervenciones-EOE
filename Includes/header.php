@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
-    <title>Actividades OE</title>
+    <title>Actividades EOE</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     
     <!-- BOOTSTRAP -->
@@ -39,7 +39,7 @@
 
   <nav class="navbar navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="..\index.php">Registro de Actividades OE</a>
+      <a class="navbar-brand" href="..\index.php">Registro de Actividades EOE</a>
     </div>
   </nav>
 

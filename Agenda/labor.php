@@ -99,7 +99,7 @@ function Footer()
     // Número de página
     $this->Cell(0,10, utf8_decode('Página ').$this->PageNo().'/{nb}',0,0);
     $this->SetX(-90);
-    $this->Cell(0,10,'Creado por sistema Intervenciones OE',0,0, 'R');
+    $this->Cell(0,10,'Creado por sistema Intervenciones EOE',0,0, 'R');
 }
 }
 
