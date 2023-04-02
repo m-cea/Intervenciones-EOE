@@ -2,7 +2,13 @@
 
 <?php include('../Includes/header.php'); ?>
 
-<!-- ADD TASK FORM -->
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="../index.php">Registro de Actividades EOE</a>
+  </div>
+</nav>
+
+<!-- Añadir -->
 
 <div class="row d-flex justify-content-center">
   <div class="col-md-10">

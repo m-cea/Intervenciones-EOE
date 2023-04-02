@@ -18,6 +18,12 @@ if  (isset($_GET['ID'])) {
 
 <?php include('../Includes/header.php'); ?>
 
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="../index.php">Registro de Actividades EOE</a>
+  </div>
+</nav>
+
 <!-- Añadir -->
 
 <div class="row d-flex justify-content-center">

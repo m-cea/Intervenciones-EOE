@@ -31,6 +31,13 @@ if (isset($_POST['update'])) {
 
 ?>
 <?php include('../Includes/header.php'); ?>
+
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="../index.php">Registro de Actividades EOE</a>
+  </div>
+</nav>
+
 <div class="container p-4">
   <div class="row">
     <div class="col-md-4 mx-auto">

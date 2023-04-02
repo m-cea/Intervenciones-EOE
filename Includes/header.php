@@ -37,11 +37,6 @@
 
   <body>
 
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="../index.php">Registro de Actividades EOE</a>
-    </div>
-  </nav>
 
 
 

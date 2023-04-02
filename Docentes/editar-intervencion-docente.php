@@ -10,7 +10,7 @@ if  (isset($_GET['Codigo'])) {
   if (mysqli_num_rows($result) == 1) {
     $row = mysqli_fetch_array($result);
     $fecha = $row['Fecha'];
-    $intervencion = $row['Intervención'];
+    $intervencion = $row['Intervencion'];
   }
 }
 
@@ -19,7 +19,7 @@ if (isset($_POST['update'])) {
   $fecha= $_POST['fecha'];
   $intervencion = $_POST['intervención'];
 
-  $query = "UPDATE `intervenciones-docentes` SET Fecha = '$fecha', Intervención = '$intervencion' WHERE Codigo=$ID";
+  $query = "UPDATE `intervenciones-docentes` SET Fecha = '$fecha', Intervencion = '$intervencion' WHERE Codigo=$ID";
   mysqli_query($conn, $query);
   $_SESSION['message'] = 'Intervención actualizada correctamente';
   $_SESSION['message_type'] = 'warning';
@@ -28,7 +28,14 @@ if (isset($_POST['update'])) {
 
 ?>
 
-<?php include('../includes/header.php'); ?>
+<?php include('../Includes/header.php'); ?>
+
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="../index.php">Registro de Actividades EOE</a>
+  </div>
+</nav>
+
 <div class="container p-4">
   <div class="row">
     <div class="col-md-4 mx-auto">
@@ -51,4 +58,4 @@ if (isset($_POST['update'])) {
     </div>
   </div>
 </div>
-<?php include('../includes/footer.php'); ?>
+<?php include('../Includes/footer.php'); ?>
