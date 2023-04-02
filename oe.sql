@@ -20,7 +20,7 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `oe`
 --
-CREATE DATABASE `oe`;
+CREATE DATABASE oe;
 -- --------------------------------------------------------
 
 --
@@ -71,7 +71,7 @@ CREATE TABLE `intervenciones-agendadas` (
 CREATE TABLE `intervenciones-alumnos` (
   `Codigo` int(11) NOT NULL,
   `Fecha` date NOT NULL,
-  `Intervención` text NOT NULL,
+  `Intervencion` text NOT NULL,
   `Alumno` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -83,7 +83,7 @@ CREATE TABLE `intervenciones-docentes` (
   `Codigo` int(11) NOT NULL,
   `Docente` int(11) NOT NULL,
   `Fecha` date NOT NULL,
-  `Intervención` text NOT NULL
+  `Intervencion` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
