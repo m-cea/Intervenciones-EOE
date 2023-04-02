@@ -14,7 +14,7 @@
       <?php session_unset(); } ?>
   
   <div class="row justify-content-center">
-    <h1> Actividades OE </h1>
+    <h1> Actividades EOE </h1>
   </div>
 
   <div class="row justify-content-center">
