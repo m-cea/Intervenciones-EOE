@@ -1,4 +1,4 @@
-# Intervenciones-OE
+# Intervenciones-EOE
 
 Sistema de registro de las actividades diarias para integrantes de Equipos de Orientación Escolar de escuelas bonaerenses (provincia de Buenos Aires, Argentina 🇦🇷)
 
