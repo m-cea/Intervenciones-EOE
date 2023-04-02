@@ -24,17 +24,17 @@
   <div class="row justify-content-center">
       <div class="col-md-3">
         <h2>Intervenciones con <b>Alumnos</b></h2>
-        <a href="Alumnos\alumnos.php"" class="btn btn-primary">Ver Alumnos</a>
+        <a href="Alumnos/alumnos.php"" class="btn btn-primary">Ver Alumnos</a>
       </div>
       
     <div class="col-md-3">
       <h2>Intervenciones con <b>Docentes</b></h2>
-      <a href="Docentes\docentes.php" class="btn btn-primary">Ver Docentes</a>
+      <a href="Docentes/docentes.php" class="btn btn-primary">Ver Docentes</a>
     </div>
 
     <div class="col-md-3">
       <h2>Intervenciones desde el <b>EOE</b></h2>
-      <a href="EOE\EOE.php" class="btn btn-primary">Ver Intervenciones</a>
+      <a href="EOE/EOE.php" class="btn btn-primary">Ver Intervenciones</a>
     </div>
   </div>
 
@@ -52,7 +52,7 @@
 
   <div class="row justify-content-center">
     <div class="col-md-12">
-      <?php include('Agenda\calendar.php'); ?>
+      <?php include('Agenda/calendar.php'); ?>
       <div id="calendar"></div>
     </div>
  
