@@ -21,9 +21,11 @@
       </div>
       
       <div class="form-group">
+        <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" class="form-control" placeholder="Nombre" autofocus required><p><br></p>
       </div>
       <div class="form-group">
+        <label for="grado">Grado:</label>
         <input type="text" name="grado" class="form-control" placeholder="Grado" autofocus required><p><br></p>
       </div>
 
@@ -39,7 +41,7 @@
 
 <div class="row d-flex justify-content-center">
   <div class="col-md-3">
-    <h2>Listado de Intervenciones</h2><p><br></p>
+    <h2>Listado de Docentes</h2><p><br></p>
   </div>
 </div>
 
@@ -56,7 +58,7 @@
     <tbody>
 
       <?php
-      $query = "SELECT * FROM Docentes";
+      $query = "SELECT * FROM Docentes ORDER BY Grado";
       $result_tasks = mysqli_query($conn, $query);
       while($row = mysqli_fetch_assoc($result_tasks)) { ?>
        <tr>

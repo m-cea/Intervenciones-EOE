@@ -36,7 +36,7 @@ if  (isset($_GET['ID'])) {
       </div>
 
       <div class="row d-flex justify-content-center">
-        <div class="col-md-5">
+        <div class="col-md-6">
           <div class="form-group">
             <input type="number" name="id" class="form-control" placeholder="id" value = "<?php echo $docente ?>" hidden autofocus> <p><br></p>
           </div>
@@ -54,10 +54,11 @@ if  (isset($_GET['ID'])) {
           </div>
         </div>
 
-        <div class="col-md-5">
-          <p><br></p>
+        <div class="col-md-2">
+          <p><br></p>          
           <div class= "form-group">
-            Intervención: <textarea name="intervencion" rows="5" cols="100" placeholder="Escribir aquí" autofocus required></textarea><p><br></p>
+            <label for="fecha"> Intervención:</label><br>
+            <textarea name="intervencion" rows="5" class="form control" placeholder="Escribir aquí" autofocus required></textarea><p><br></p>
           </div>
         </div>
         <div class="col-md-1"></div>

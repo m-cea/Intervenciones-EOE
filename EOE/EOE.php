@@ -22,7 +22,8 @@
         <input type="date" name="fecha" class="form-control" placeholder="Fecha" autofocus required><p><br></p>
       </div>
       <div class="form-group">
-        <label for="intervencion"> Intervención: </label><br><textarea name="intervencion" rows="3" cols="160" required autofocus></textarea><p><br></p>
+        <label for="intervencion"> Intervención: </label><br>
+        <textarea name="intervencion" rows="3" class="form-control" required autofocus></textarea><p><br></p>
       </div>
 
       <div class="row justify-content-center">

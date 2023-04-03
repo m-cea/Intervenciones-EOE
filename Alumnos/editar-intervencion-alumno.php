@@ -50,7 +50,7 @@ if (isset($_POST['update'])) {
         </div>
         <div class="form-group">
           <label for="intervencion">Nueva Intervención:</label>
-          <input name="intervencion" type="text" class="form-control" value="<?php echo $intervencion; ?>" required>
+          <textarea name="intervencion" rows="3" class="form-control" value="<?php echo $intervencion; ?>" required></textarea><p><br></p>
         </div>
         <br>
         <button class="btn btn-success" name="update">

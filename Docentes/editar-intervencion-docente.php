@@ -17,7 +17,7 @@ if  (isset($_GET['Codigo'])) {
 if (isset($_POST['update'])) {
   $ID = $_GET['ID'];
   $fecha= $_POST['fecha'];
-  $intervencion = $_POST['intervención'];
+  $intervencion = $_POST['intervencion'];
 
   $query = "UPDATE `intervenciones-docentes` SET Fecha = '$fecha', Intervencion = '$intervencion' WHERE Codigo=$ID";
   mysqli_query($conn, $query);
@@ -48,7 +48,7 @@ if (isset($_POST['update'])) {
         </div>
         <div class="form-group">
           <label for="intervencion">Nueva Intervención:</label>
-          <input name="intervencion" type="text" class="form-control" value="<?php echo $intervencion; ?>" required>
+          <textarea name="intervencion" rows="3" class="form-control" required autofocus value="<?php echo $intervencion; ?>" required></textarea><p><br></p>
         </div>
         <br>
         <button class="btn btn-success" name="update">
