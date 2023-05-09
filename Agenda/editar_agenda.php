@@ -56,7 +56,7 @@ if (isset($_POST['update'])) {
         <button class="btn btn-success" name="update">
           Editar
         </button>
-        <a href="index.php" class="btn btn-dark">Volver</a>
+        <a href="../index.php" class="btn btn-dark">Volver</a>
       </form>
     </div>
     </div>

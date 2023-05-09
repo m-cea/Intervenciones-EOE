@@ -58,7 +58,7 @@
     <tbody>
 
       <?php
-      $query = "SELECT * FROM Docentes ORDER BY Grado";
+      $query = "SELECT * FROM Docentes ORDER BY Grado, Nombre";
       $result_tasks = mysqli_query($conn, $query);
       while($row = mysqli_fetch_assoc($result_tasks)) { ?>
        <tr>
